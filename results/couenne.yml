@@ -1,0 +1,147 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Lower bound: -inf
+  Upper bound: inf
+  Number of objectives: 1
+  Number of constraints: 0
+  Number of variables: 3038
+  Sense: unknown
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Message: couenne\x3a Optimal
+  Termination condition: optimal
+  Id: 3
+  Error rc: 0
+  Time: 3.4390010833740234
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: None
+  Status: optimal
+  Message: couenne\x3a Optimal
+  Objective:
+    cost:
+      Value: 823.783336053417
+  Variable:
+    x[1,10]:
+      Value: 0.9999999999999999
+    x[1,11]:
+      Value: 1
+    x[1,14]:
+      Value: 1
+    x[1,15]:
+      Value: 1
+    x[1,16]:
+      Value: 1
+    x[1,17]:
+      Value: 1
+    x[1,18]:
+      Value: 1
+    x[1,19]:
+      Value: 1
+    x[1,1]:
+      Value: 0.9999999999999999
+    x[1,20]:
+      Value: 1
+    x[1,21]:
+      Value: 0.9999999999999999
+    x[1,22]:
+      Value: 1
+    x[1,23]:
+      Value: 1
+    x[1,24]:
+      Value: 1
+    x[1,26]:
+      Value: 1
+    x[1,2]:
+      Value: 1
+    x[1,31]:
+      Value: 0.9999999999999999
+    x[1,32]:
+      Value: 1
+    x[1,34]:
+      Value: 1
+    x[1,35]:
+      Value: 0.9999999999999999
+    x[1,37]:
+      Value: 1
+    x[1,38]:
+      Value: 1
+    x[1,3]:
+      Value: 1
+    x[1,41]:
+      Value: 1
+    x[1,42]:
+      Value: 1
+    x[1,46]:
+      Value: 0.9999999999999999
+    x[1,4]:
+      Value: 1
+    x[1,6]:
+      Value: 1
+    x[1,7]:
+      Value: 0.9999999999999999
+    x[1,8]:
+      Value: 1
+    x[1,9]:
+      Value: 1
+    x[18,27]:
+      Value: 1
+    x[18,28]:
+      Value: 1
+    x[20,12]:
+      Value: 1
+    x[20,43]:
+      Value: 1
+    x[29,29]:
+      Value: 1
+    x[29,47]:
+      Value: 1
+    x[29,48]:
+      Value: 1
+    x[30,30]:
+      Value: 1
+    x[34,25]:
+      Value: 1
+    x[34,39]:
+      Value: 1
+    x[34,44]:
+      Value: 0.9999999999999999
+    x[34,45]:
+      Value: 0.9999999999999999
+    x[8,13]:
+      Value: 1
+    x[8,33]:
+      Value: 1
+    x[8,36]:
+      Value: 0.9999999999999999
+    x[8,40]:
+      Value: 1
+    x[8,5]:
+      Value: 0.9999999999999999
+    y[18]:
+      Value: 1
+    y[1]:
+      Value: 0.9999999999999999
+    y[20]:
+      Value: 1
+    y[29]:
+      Value: 1
+    y[30]:
+      Value: 0.9999999999999999
+    y[34]:
+      Value: 0.9999999999999999
+    y[8]:
+      Value: 1
+  Constraint: No values
