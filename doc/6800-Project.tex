@@ -1,0 +1,74 @@
+\documentclass{article}
+
+
+\usepackage{amsmath}
+\usepackage{optidef}
+\usepackage{fixltx2e}
+
+
+% Title Page
+\title{Optimal Location of Replacement Vehicles to Mitigate Delivery Delays}
+\date{11-15-2019}
+\author{Ali El-Khatib}
+
+
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Over-the-road vehicles are crucial for the timely delivery of cargo across all businesses. While traveling cross country, breakdowns and maintenance needs serve to delay the timing schedule for deliveries. To solve this issue, replacement vehicles need to be placed in strategic locations as to minimize fleet downtime. Utilizing a location allocation model, optimal locations are to be determined resulting in maximal coverage of an OTR route from Portland, Oregon to Chicago, Illinois. Additionally, the optimal number of replacement vehicles to place will be determined. Ultimately, this will hopefully result in less disruptions to customer delivery schedules and increase customer satisfaction with the maintenance services provided. 
+
+\end{abstract}
+
+
+\pagenumbering{arabic}
+\newpage
+
+\section{Chapter}
+dfajdflakjnalkjfjbdflkajdnfsalkjdfn
+
+\section{Introduction}
+\paragraph{}
+In a typical location optimization problem, the primary interest is finding the optimal placement of new facilities so as to minimize transportation cost from these facilities to customers\cite{haghani_2010}. These occur in both the public and private sector. An example in the public sector is finding the optimal location for public emergency service buildings so as to minimize response time. In the private sector, examples would include the placement of warehouses or maintenance facilities \cite{akinc1977efficient, akinc_1985}. Following closely to the location problem, the allocation problem is used to determine the magnitude of demands that is to be assigned at any one location. Both of these problems are coined location allocation problems and serve to minimize operating costs, while maximizing the revenue generated. \cite{chung1983capacitated, current1988capacitated, mukundan1991joint}
+In the same vein as the location allocation problem
+		
+Over-the-road (OTR) refers to the transportation of materials over very long distances, usually utilizing interstate and public highway systems. Typically, due to customer requirements and similar variables,  these types of deliveries are time-sensitive and have notoriously inflexible time schedules. Due to this, any delay in delivery results in detrimental effects on the target recipients of said delivery. Due to the high usage of OTR vehicles, wear-and-tear accumulate at an increased rate and as such require more maintenance or repairs to extend the life of the vehicle and ensure optimal performance. Ultimately, this results in a delay in delivery as a vehicle is taken to a service center and the driver waits idly until repairs are completed. Consequently, replacement vehicles are offered to customers as to maximize their respective fleet uptime and ensure on-time deliveries.
+
+		
+		
+\section{Background}
+\paragraph{}
+On a highly-trafficked trucking route from Chicago, Il. to Portland, OR, vehicle breakdowns are common at any point along the route. There are numerous repair locations along the route that vehicles can be taken to, though coverage is lacking in certain areas (e.g., more rural or less densely populated areas). In an effort to reduce the impact on customer deliveries, a number of  replacement vehicles are to be placed along the route at either these repair locations or partnering-business locations.
+This project aims to determine the most optimal location for a number of replacement vehicles along a heavily-trafficked trucking route. This will be achieved by constructing and optimizing a Location Allocation Model,  that will serve to:
+\begin{itemize}
+	\item{Determine the optimal location to place replacement vehicles, so as to maximize coverage}
+	\item{Determine the optimal number of replacement vehicles to place to satisfy any potential demand}
+\end{itemize}    	
+		
+\section{Problem Statement}
+	The following optimization model is heavily based on the model previously constructed by \cite{church1974maximal}:
+
+
+		\begin{maxi*}|s| {}{z = \sum_{i \in I}{{a_i}{y_i}}} 
+				{}{}{} \\
+				\addConstraint{\sum_{j \in J}{x_j} = P}
+				\addConstraint{\sum_{j \in {N_i}}{x_j} \geq {y_i}}
+				\addConstraint{{x_j} = (0, 1)} \quad \text{for all} \  j \in J 
+				\addConstraint{{y_i} = (0, 1)}\quad  \text{for all}\  i \in I 
+		\end{maxi*}
+I = \text{denotes the set of demand nodes}\\ 
+J = \text{denotes the set of replacement vehicles}  \\ 
+S = \text{the distance beyond which a demand point is considered uncovered} \\ 
+d\textsubscript{ij} = \text{shortest distanace from a node i to node j} \\ 
+x\textsubscript{j} = $\begin{cases} 1 ,  \text{if a facility is allocated to site j}, \\ 0, \text{otherwise} \end{cases}$ \\ 
+N\textsubscript{i} = $\begin{cases} j \in J | d_{ij} \leq S \end{cases}$ \} \\
+a\textsubscript{i} = breakdowns to be served at demand node i \\
+p = \text{the number of replacement vehicles to be placed}
+
+
+\bibliographystyle{ieeetran}
+\bibliography{project}
+\nocite{*}
+
+\end{document}
